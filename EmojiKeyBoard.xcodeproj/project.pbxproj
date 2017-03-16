@@ -1,0 +1,769 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		39BDE069FBCF1CC735F6181F /* libPods-EmojiKeyBoardUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 758FD227E2AC51E08CD3E0BF /* libPods-EmojiKeyBoardUITests.a */; };
+		45641025678D233C4120B3FE /* libPods-EmojiKeyBoardTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BBD9B1E9E89BF9CB4EA0A5EA /* libPods-EmojiKeyBoardTests.a */; };
+		C90039001E66BA4B00E17FDC /* InputBar.m in Sources */ = {isa = PBXBuildFile; fileRef = C90038FF1E66BA4B00E17FDC /* InputBar.m */; };
+		C94DE8E41E65147500838085 /* EmojiKeyBoardView.m in Sources */ = {isa = PBXBuildFile; fileRef = C94DE8E31E65147500838085 /* EmojiKeyBoardView.m */; };
+		C94DE8E71E65561D00838085 /* EmojiCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C94DE8E61E65561D00838085 /* EmojiCollectionViewCell.m */; };
+		C94DE8E91E6564A500838085 /* EmojiPList.plist in Resources */ = {isa = PBXBuildFile; fileRef = C94DE8E81E6564A500838085 /* EmojiPList.plist */; };
+		C94DE8F21E6568A100838085 /* NSString+Emoji.m in Sources */ = {isa = PBXBuildFile; fileRef = C94DE8F11E6568A100838085 /* NSString+Emoji.m */; };
+		C97F604C1E79311C001E6D90 /* EmojiFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = C97F604B1E79311C001E6D90 /* EmojiFlowLayout.m */; };
+		C9883CAE1E6D3BD200E84B8D /* UIView+Positioning.m in Sources */ = {isa = PBXBuildFile; fileRef = C9883CAD1E6D3BD200E84B8D /* UIView+Positioning.m */; };
+		C9C438E81E6414D300C35B87 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C9C438E71E6414D300C35B87 /* main.m */; };
+		C9C438EB1E6414D400C35B87 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C9C438EA1E6414D400C35B87 /* AppDelegate.m */; };
+		C9C438EE1E6414D400C35B87 /* EmojiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9C438ED1E6414D400C35B87 /* EmojiViewController.m */; };
+		C9C438F31E6414D400C35B87 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9C438F21E6414D400C35B87 /* Assets.xcassets */; };
+		C9C438F61E6414D400C35B87 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9C438F41E6414D400C35B87 /* LaunchScreen.storyboard */; };
+		C9C439011E6414D400C35B87 /* EmojiKeyBoardTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C9C439001E6414D400C35B87 /* EmojiKeyBoardTests.m */; };
+		C9C4390C1E6414D400C35B87 /* EmojiKeyBoardUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C9C4390B1E6414D400C35B87 /* EmojiKeyBoardUITests.m */; };
+		C9E0FCBD1E768D09000EF74B /* QYCEmojiCollectionViewFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = C9E0FCBC1E768D09000EF74B /* QYCEmojiCollectionViewFlowLayout.m */; };
+		FD81BE0484F6FCD9FD9614A6 /* libPods-EmojiKeyBoard.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B8CFDCBCE904ACC0891B067B /* libPods-EmojiKeyBoard.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C9C438FD1E6414D400C35B87 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C9C438DB1E6414D300C35B87 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C9C438E21E6414D300C35B87;
+			remoteInfo = EmojiKeyBoard;
+		};
+		C9C439081E6414D400C35B87 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C9C438DB1E6414D300C35B87 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C9C438E21E6414D300C35B87;
+			remoteInfo = EmojiKeyBoard;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5BE70AB6ABC7709C947088E1 /* Pods-EmojiKeyBoard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EmojiKeyBoard.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EmojiKeyBoard/Pods-EmojiKeyBoard.debug.xcconfig"; sourceTree = "<group>"; };
+		68F96B91DAAA9A1FF8F7C6E1 /* Pods-EmojiKeyBoardUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EmojiKeyBoardUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EmojiKeyBoardUITests/Pods-EmojiKeyBoardUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		758FD227E2AC51E08CD3E0BF /* libPods-EmojiKeyBoardUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-EmojiKeyBoardUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		84307CBCAD0226FB27DCB201 /* Pods-EmojiKeyBoardTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EmojiKeyBoardTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-EmojiKeyBoardTests/Pods-EmojiKeyBoardTests.release.xcconfig"; sourceTree = "<group>"; };
+		A0C4A7178E226E0A1B8743FC /* Pods-EmojiKeyBoardUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EmojiKeyBoardUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-EmojiKeyBoardUITests/Pods-EmojiKeyBoardUITests.release.xcconfig"; sourceTree = "<group>"; };
+		B8CFDCBCE904ACC0891B067B /* libPods-EmojiKeyBoard.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-EmojiKeyBoard.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BBD9B1E9E89BF9CB4EA0A5EA /* libPods-EmojiKeyBoardTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-EmojiKeyBoardTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE3A6C74CBC79FC263E9A7C4 /* Pods-EmojiKeyBoardTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EmojiKeyBoardTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EmojiKeyBoardTests/Pods-EmojiKeyBoardTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C90038FE1E66BA4B00E17FDC /* InputBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InputBar.h; sourceTree = "<group>"; };
+		C90038FF1E66BA4B00E17FDC /* InputBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InputBar.m; sourceTree = "<group>"; };
+		C94DE8E21E65147500838085 /* EmojiKeyBoardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmojiKeyBoardView.h; sourceTree = "<group>"; };
+		C94DE8E31E65147500838085 /* EmojiKeyBoardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmojiKeyBoardView.m; sourceTree = "<group>"; };
+		C94DE8E51E65561D00838085 /* EmojiCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmojiCollectionViewCell.h; sourceTree = "<group>"; };
+		C94DE8E61E65561D00838085 /* EmojiCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmojiCollectionViewCell.m; sourceTree = "<group>"; };
+		C94DE8E81E6564A500838085 /* EmojiPList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = EmojiPList.plist; sourceTree = "<group>"; };
+		C94DE8F01E6568A100838085 /* NSString+Emoji.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Emoji.h"; sourceTree = "<group>"; };
+		C94DE8F11E6568A100838085 /* NSString+Emoji.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Emoji.m"; sourceTree = "<group>"; };
+		C97F604A1E79311C001E6D90 /* EmojiFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmojiFlowLayout.h; sourceTree = "<group>"; };
+		C97F604B1E79311C001E6D90 /* EmojiFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmojiFlowLayout.m; sourceTree = "<group>"; };
+		C9883CAC1E6D3BD200E84B8D /* UIView+Positioning.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Positioning.h"; sourceTree = "<group>"; };
+		C9883CAD1E6D3BD200E84B8D /* UIView+Positioning.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Positioning.m"; sourceTree = "<group>"; };
+		C9C438E31E6414D300C35B87 /* EmojiKeyBoard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EmojiKeyBoard.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9C438E71E6414D300C35B87 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C9C438E91E6414D300C35B87 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		C9C438EA1E6414D400C35B87 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C9C438EC1E6414D400C35B87 /* EmojiViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EmojiViewController.h; sourceTree = "<group>"; };
+		C9C438ED1E6414D400C35B87 /* EmojiViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EmojiViewController.m; sourceTree = "<group>"; };
+		C9C438F21E6414D400C35B87 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C9C438F51E6414D400C35B87 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C9C438F71E6414D400C35B87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C9C438FC1E6414D400C35B87 /* EmojiKeyBoardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EmojiKeyBoardTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9C439001E6414D400C35B87 /* EmojiKeyBoardTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EmojiKeyBoardTests.m; sourceTree = "<group>"; };
+		C9C439021E6414D400C35B87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C9C439071E6414D400C35B87 /* EmojiKeyBoardUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EmojiKeyBoardUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9C4390B1E6414D400C35B87 /* EmojiKeyBoardUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EmojiKeyBoardUITests.m; sourceTree = "<group>"; };
+		C9C4390D1E6414D400C35B87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C9E0FCBB1E768D09000EF74B /* QYCEmojiCollectionViewFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QYCEmojiCollectionViewFlowLayout.h; sourceTree = "<group>"; };
+		C9E0FCBC1E768D09000EF74B /* QYCEmojiCollectionViewFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QYCEmojiCollectionViewFlowLayout.m; sourceTree = "<group>"; };
+		DBEB8AD6110C80F62AA830F5 /* Pods-EmojiKeyBoard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EmojiKeyBoard.release.xcconfig"; path = "Pods/Target Support Files/Pods-EmojiKeyBoard/Pods-EmojiKeyBoard.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C9C438E01E6414D300C35B87 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD81BE0484F6FCD9FD9614A6 /* libPods-EmojiKeyBoard.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9C438F91E6414D400C35B87 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45641025678D233C4120B3FE /* libPods-EmojiKeyBoardTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9C439041E6414D400C35B87 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39BDE069FBCF1CC735F6181F /* libPods-EmojiKeyBoardUITests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		45287E95F8BD2377D3EFAA6E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5BE70AB6ABC7709C947088E1 /* Pods-EmojiKeyBoard.debug.xcconfig */,
+				DBEB8AD6110C80F62AA830F5 /* Pods-EmojiKeyBoard.release.xcconfig */,
+				BE3A6C74CBC79FC263E9A7C4 /* Pods-EmojiKeyBoardTests.debug.xcconfig */,
+				84307CBCAD0226FB27DCB201 /* Pods-EmojiKeyBoardTests.release.xcconfig */,
+				68F96B91DAAA9A1FF8F7C6E1 /* Pods-EmojiKeyBoardUITests.debug.xcconfig */,
+				A0C4A7178E226E0A1B8743FC /* Pods-EmojiKeyBoardUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7A7DD49E28E30C13A0096463 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B8CFDCBCE904ACC0891B067B /* libPods-EmojiKeyBoard.a */,
+				BBD9B1E9E89BF9CB4EA0A5EA /* libPods-EmojiKeyBoardTests.a */,
+				758FD227E2AC51E08CD3E0BF /* libPods-EmojiKeyBoardUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C9C438DA1E6414D300C35B87 = {
+			isa = PBXGroup;
+			children = (
+				C9C438E51E6414D300C35B87 /* EmojiKeyBoard */,
+				C9C438FF1E6414D400C35B87 /* EmojiKeyBoardTests */,
+				C9C4390A1E6414D400C35B87 /* EmojiKeyBoardUITests */,
+				C9C438E41E6414D300C35B87 /* Products */,
+				45287E95F8BD2377D3EFAA6E /* Pods */,
+				7A7DD49E28E30C13A0096463 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C9C438E41E6414D300C35B87 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C9C438E31E6414D300C35B87 /* EmojiKeyBoard.app */,
+				C9C438FC1E6414D400C35B87 /* EmojiKeyBoardTests.xctest */,
+				C9C439071E6414D400C35B87 /* EmojiKeyBoardUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C9C438E51E6414D300C35B87 /* EmojiKeyBoard */ = {
+			isa = PBXGroup;
+			children = (
+				C94DE8E81E6564A500838085 /* EmojiPList.plist */,
+				C94DE8F01E6568A100838085 /* NSString+Emoji.h */,
+				C94DE8F11E6568A100838085 /* NSString+Emoji.m */,
+				C9C438E91E6414D300C35B87 /* AppDelegate.h */,
+				C9C438EA1E6414D400C35B87 /* AppDelegate.m */,
+				C9C438EC1E6414D400C35B87 /* EmojiViewController.h */,
+				C9C438ED1E6414D400C35B87 /* EmojiViewController.m */,
+				C90038FE1E66BA4B00E17FDC /* InputBar.h */,
+				C90038FF1E66BA4B00E17FDC /* InputBar.m */,
+				C94DE8E21E65147500838085 /* EmojiKeyBoardView.h */,
+				C94DE8E31E65147500838085 /* EmojiKeyBoardView.m */,
+				C97F604A1E79311C001E6D90 /* EmojiFlowLayout.h */,
+				C97F604B1E79311C001E6D90 /* EmojiFlowLayout.m */,
+				C9E0FCBB1E768D09000EF74B /* QYCEmojiCollectionViewFlowLayout.h */,
+				C9E0FCBC1E768D09000EF74B /* QYCEmojiCollectionViewFlowLayout.m */,
+				C94DE8E51E65561D00838085 /* EmojiCollectionViewCell.h */,
+				C94DE8E61E65561D00838085 /* EmojiCollectionViewCell.m */,
+				C9C438F21E6414D400C35B87 /* Assets.xcassets */,
+				C9C438F41E6414D400C35B87 /* LaunchScreen.storyboard */,
+				C9C438F71E6414D400C35B87 /* Info.plist */,
+				C9C438E61E6414D300C35B87 /* Supporting Files */,
+			);
+			path = EmojiKeyBoard;
+			sourceTree = "<group>";
+		};
+		C9C438E61E6414D300C35B87 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C9C438E71E6414D300C35B87 /* main.m */,
+				C9883CAC1E6D3BD200E84B8D /* UIView+Positioning.h */,
+				C9883CAD1E6D3BD200E84B8D /* UIView+Positioning.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C9C438FF1E6414D400C35B87 /* EmojiKeyBoardTests */ = {
+			isa = PBXGroup;
+			children = (
+				C9C439001E6414D400C35B87 /* EmojiKeyBoardTests.m */,
+				C9C439021E6414D400C35B87 /* Info.plist */,
+			);
+			path = EmojiKeyBoardTests;
+			sourceTree = "<group>";
+		};
+		C9C4390A1E6414D400C35B87 /* EmojiKeyBoardUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C9C4390B1E6414D400C35B87 /* EmojiKeyBoardUITests.m */,
+				C9C4390D1E6414D400C35B87 /* Info.plist */,
+			);
+			path = EmojiKeyBoardUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C9C438E21E6414D300C35B87 /* EmojiKeyBoard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C9C439101E6414D400C35B87 /* Build configuration list for PBXNativeTarget "EmojiKeyBoard" */;
+			buildPhases = (
+				F519C3C137284DDDDC0AE05F /* [CP] Check Pods Manifest.lock */,
+				C9C438DF1E6414D300C35B87 /* Sources */,
+				C9C438E01E6414D300C35B87 /* Frameworks */,
+				C9C438E11E6414D300C35B87 /* Resources */,
+				0994C7D6ED0DA6808DD8ACD8 /* [CP] Embed Pods Frameworks */,
+				1661C162AB21D4C0F1D37145 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EmojiKeyBoard;
+			productName = EmojiKeyBoard;
+			productReference = C9C438E31E6414D300C35B87 /* EmojiKeyBoard.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C9C438FB1E6414D400C35B87 /* EmojiKeyBoardTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C9C439131E6414D400C35B87 /* Build configuration list for PBXNativeTarget "EmojiKeyBoardTests" */;
+			buildPhases = (
+				A13544603125A5B45E3F7787 /* [CP] Check Pods Manifest.lock */,
+				C9C438F81E6414D400C35B87 /* Sources */,
+				C9C438F91E6414D400C35B87 /* Frameworks */,
+				C9C438FA1E6414D400C35B87 /* Resources */,
+				9819C66788EC6521B0776E92 /* [CP] Embed Pods Frameworks */,
+				FA16E0772B853CA6E04547BD /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C9C438FE1E6414D400C35B87 /* PBXTargetDependency */,
+			);
+			name = EmojiKeyBoardTests;
+			productName = EmojiKeyBoardTests;
+			productReference = C9C438FC1E6414D400C35B87 /* EmojiKeyBoardTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C9C439061E6414D400C35B87 /* EmojiKeyBoardUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C9C439161E6414D400C35B87 /* Build configuration list for PBXNativeTarget "EmojiKeyBoardUITests" */;
+			buildPhases = (
+				DBB2FA70EAC8E48B996AA1F9 /* [CP] Check Pods Manifest.lock */,
+				C9C439031E6414D400C35B87 /* Sources */,
+				C9C439041E6414D400C35B87 /* Frameworks */,
+				C9C439051E6414D400C35B87 /* Resources */,
+				298616A8BEAF4A20409EFA1E /* [CP] Embed Pods Frameworks */,
+				1C61EBA8C16B9010F6EB811A /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C9C439091E6414D400C35B87 /* PBXTargetDependency */,
+			);
+			name = EmojiKeyBoardUITests;
+			productName = EmojiKeyBoardUITests;
+			productReference = C9C439071E6414D400C35B87 /* EmojiKeyBoardUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C9C438DB1E6414D300C35B87 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = xiaolin.han;
+				TargetAttributes = {
+					C9C438E21E6414D300C35B87 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = U2DK25PEUY;
+						ProvisioningStyle = Automatic;
+					};
+					C9C438FB1E6414D400C35B87 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = U2DK25PEUY;
+						ProvisioningStyle = Automatic;
+						TestTargetID = C9C438E21E6414D300C35B87;
+					};
+					C9C439061E6414D400C35B87 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = U2DK25PEUY;
+						ProvisioningStyle = Automatic;
+						TestTargetID = C9C438E21E6414D300C35B87;
+					};
+				};
+			};
+			buildConfigurationList = C9C438DE1E6414D300C35B87 /* Build configuration list for PBXProject "EmojiKeyBoard" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C9C438DA1E6414D300C35B87;
+			productRefGroup = C9C438E41E6414D300C35B87 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C9C438E21E6414D300C35B87 /* EmojiKeyBoard */,
+				C9C438FB1E6414D400C35B87 /* EmojiKeyBoardTests */,
+				C9C439061E6414D400C35B87 /* EmojiKeyBoardUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C9C438E11E6414D300C35B87 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9C438F61E6414D400C35B87 /* LaunchScreen.storyboard in Resources */,
+				C94DE8E91E6564A500838085 /* EmojiPList.plist in Resources */,
+				C9C438F31E6414D400C35B87 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9C438FA1E6414D400C35B87 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9C439051E6414D400C35B87 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0994C7D6ED0DA6808DD8ACD8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EmojiKeyBoard/Pods-EmojiKeyBoard-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1661C162AB21D4C0F1D37145 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EmojiKeyBoard/Pods-EmojiKeyBoard-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1C61EBA8C16B9010F6EB811A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EmojiKeyBoardUITests/Pods-EmojiKeyBoardUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		298616A8BEAF4A20409EFA1E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EmojiKeyBoardUITests/Pods-EmojiKeyBoardUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9819C66788EC6521B0776E92 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EmojiKeyBoardTests/Pods-EmojiKeyBoardTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A13544603125A5B45E3F7787 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		DBB2FA70EAC8E48B996AA1F9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F519C3C137284DDDDC0AE05F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FA16E0772B853CA6E04547BD /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EmojiKeyBoardTests/Pods-EmojiKeyBoardTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C9C438DF1E6414D300C35B87 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C97F604C1E79311C001E6D90 /* EmojiFlowLayout.m in Sources */,
+				C94DE8F21E6568A100838085 /* NSString+Emoji.m in Sources */,
+				C94DE8E41E65147500838085 /* EmojiKeyBoardView.m in Sources */,
+				C9E0FCBD1E768D09000EF74B /* QYCEmojiCollectionViewFlowLayout.m in Sources */,
+				C9C438EE1E6414D400C35B87 /* EmojiViewController.m in Sources */,
+				C94DE8E71E65561D00838085 /* EmojiCollectionViewCell.m in Sources */,
+				C9C438EB1E6414D400C35B87 /* AppDelegate.m in Sources */,
+				C90039001E66BA4B00E17FDC /* InputBar.m in Sources */,
+				C9883CAE1E6D3BD200E84B8D /* UIView+Positioning.m in Sources */,
+				C9C438E81E6414D300C35B87 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9C438F81E6414D400C35B87 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9C439011E6414D400C35B87 /* EmojiKeyBoardTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9C439031E6414D400C35B87 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9C4390C1E6414D400C35B87 /* EmojiKeyBoardUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C9C438FE1E6414D400C35B87 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C9C438E21E6414D300C35B87 /* EmojiKeyBoard */;
+			targetProxy = C9C438FD1E6414D400C35B87 /* PBXContainerItemProxy */;
+		};
+		C9C439091E6414D400C35B87 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C9C438E21E6414D300C35B87 /* EmojiKeyBoard */;
+			targetProxy = C9C439081E6414D400C35B87 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C9C438F41E6414D400C35B87 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C9C438F51E6414D400C35B87 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C9C4390E1E6414D400C35B87 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		C9C4390F1E6414D400C35B87 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C9C439111E6414D400C35B87 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5BE70AB6ABC7709C947088E1 /* Pods-EmojiKeyBoard.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = U2DK25PEUY;
+				INFOPLIST_FILE = EmojiKeyBoard/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "ZooTest.-";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		C9C439121E6414D400C35B87 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DBEB8AD6110C80F62AA830F5 /* Pods-EmojiKeyBoard.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = U2DK25PEUY;
+				INFOPLIST_FILE = EmojiKeyBoard/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "ZooTest.-";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		C9C439141E6414D400C35B87 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BE3A6C74CBC79FC263E9A7C4 /* Pods-EmojiKeyBoardTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = U2DK25PEUY;
+				INFOPLIST_FILE = EmojiKeyBoardTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = qyer.com.EmojiKeyBoardTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EmojiKeyBoard.app/EmojiKeyBoard";
+			};
+			name = Debug;
+		};
+		C9C439151E6414D400C35B87 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 84307CBCAD0226FB27DCB201 /* Pods-EmojiKeyBoardTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = U2DK25PEUY;
+				INFOPLIST_FILE = EmojiKeyBoardTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = qyer.com.EmojiKeyBoardTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EmojiKeyBoard.app/EmojiKeyBoard";
+			};
+			name = Release;
+		};
+		C9C439171E6414D400C35B87 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 68F96B91DAAA9A1FF8F7C6E1 /* Pods-EmojiKeyBoardUITests.debug.xcconfig */;
+			buildSettings = {
+				DEVELOPMENT_TEAM = U2DK25PEUY;
+				INFOPLIST_FILE = EmojiKeyBoardUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = qyer.com.EmojiKeyBoardUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = EmojiKeyBoard;
+			};
+			name = Debug;
+		};
+		C9C439181E6414D400C35B87 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A0C4A7178E226E0A1B8743FC /* Pods-EmojiKeyBoardUITests.release.xcconfig */;
+			buildSettings = {
+				DEVELOPMENT_TEAM = U2DK25PEUY;
+				INFOPLIST_FILE = EmojiKeyBoardUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = qyer.com.EmojiKeyBoardUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = EmojiKeyBoard;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C9C438DE1E6414D300C35B87 /* Build configuration list for PBXProject "EmojiKeyBoard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C9C4390E1E6414D400C35B87 /* Debug */,
+				C9C4390F1E6414D400C35B87 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C9C439101E6414D400C35B87 /* Build configuration list for PBXNativeTarget "EmojiKeyBoard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C9C439111E6414D400C35B87 /* Debug */,
+				C9C439121E6414D400C35B87 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C9C439131E6414D400C35B87 /* Build configuration list for PBXNativeTarget "EmojiKeyBoardTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C9C439141E6414D400C35B87 /* Debug */,
+				C9C439151E6414D400C35B87 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C9C439161E6414D400C35B87 /* Build configuration list for PBXNativeTarget "EmojiKeyBoardUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C9C439171E6414D400C35B87 /* Debug */,
+				C9C439181E6414D400C35B87 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C9C438DB1E6414D300C35B87 /* Project object */;
+}
