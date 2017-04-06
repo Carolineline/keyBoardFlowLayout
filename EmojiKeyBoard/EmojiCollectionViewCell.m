@@ -9,6 +9,10 @@
 #import "EmojiCollectionViewCell.h"
 #import "Masonry.h"
 
+@interface EmojiCollectionViewCell ()
+
+@end
+
 @implementation EmojiCollectionViewCell
 
 -(instancetype)initWithFrame:(CGRect)frame
@@ -38,11 +42,10 @@
         _emojiLabel.backgroundColor = [UIColor yellowColor];
         _emojiLabel.layer.borderWidth = 1;
         _emojiLabel.layer.borderColor = [UIColor lightGrayColor].CGColor;
-    }
+        
+            }
     return _emojiLabel;
 }
-
-
 
 
 @end

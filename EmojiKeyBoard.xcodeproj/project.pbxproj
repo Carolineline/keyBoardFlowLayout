@@ -291,7 +291,7 @@
 				TargetAttributes = {
 					C9C438E21E6414D300C35B87 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = U2DK25PEUY;
+						DevelopmentTeam = D84VLQCJUB;
 						ProvisioningStyle = Automatic;
 					};
 					C9C438FB1E6414D400C35B87 = {
@@ -647,11 +647,11 @@
 			baseConfigurationReference = 5BE70AB6ABC7709C947088E1 /* Pods-EmojiKeyBoard.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = U2DK25PEUY;
+				DEVELOPMENT_TEAM = D84VLQCJUB;
 				INFOPLIST_FILE = EmojiKeyBoard/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "ZooTest.-";
+				PRODUCT_BUNDLE_IDENTIFIER = "iOS-Wildcard-Development.-";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -661,11 +661,11 @@
 			baseConfigurationReference = DBEB8AD6110C80F62AA830F5 /* Pods-EmojiKeyBoard.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = U2DK25PEUY;
+				DEVELOPMENT_TEAM = D84VLQCJUB;
 				INFOPLIST_FILE = EmojiKeyBoard/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "ZooTest.-";
+				PRODUCT_BUNDLE_IDENTIFIER = "iOS-Wildcard-Development.-";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

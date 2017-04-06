@@ -30,7 +30,6 @@
     // Get the number of cells and the bounds size
     _cellCount = [self.collectionView numberOfItemsInSection:0];
     _boundsSize = self.collectionView.bounds.size;
-    self.sectionInset = UIEdgeInsetsMake(25, 20, 35, 20);
     self.minimumLineSpacing = 10;
     self.minimumInteritemSpacing = 95.0/7;
     self.itemCountPerRow = 8;
@@ -101,8 +100,9 @@
     CGRect frame = CGRectZero;
     
     // And finally, we assign the positions of the cells
-    frame.origin.x = itemPage * bounds.size.width + columnPosition * itemSize.width + 20 + 95.0/7*columnPosition;
-    frame.origin.y = rowPosition * itemSize.height + 35;
+    frame.origin.x = itemPage * bounds.size.width + columnPosition * itemSize.width + 20 + (bounds.size.width - 30*8 - 40)/7 *columnPosition;
+    frame.origin.y = rowPosition * (itemSize.height + 19.5) + 20;
+
     frame.size = itemSize;
     
     attr.frame = frame;

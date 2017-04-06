@@ -20,12 +20,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "EmojiKeyBoard/EmojiFlowLayout.m"
-            timestampString = "511260108.066507"
+            timestampString = "513150352.438806"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "60"
-            endingLineNumber = "60"
-            landmarkName = "-collectionViewContentSize"
+            startingLineNumber = "59"
+            endingLineNumber = "59"
+            landmarkName = "-layoutAttributesForElementsInRect:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

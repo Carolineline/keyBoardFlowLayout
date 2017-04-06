@@ -14,9 +14,10 @@
 #import "EmojiFlowLayout.h"
 
 #define WIDTH [UIScreen mainScreen].bounds.size.width
-@interface EmojiKeyBoardView ()<UICollectionViewDelegate, UICollectionViewDataSource, UIScrollViewDelegate>
+@interface EmojiKeyBoardView ()<UICollectionViewDelegate, UICollectionViewDataSource, UIScrollViewDelegate, UIGestureRecognizerDelegate>
 
 @property (nonatomic, strong) NSArray *emojiDataSource;
+@property (nonatomic, strong) UIImageView *emojiPreview;
 
 @end
 
@@ -74,6 +75,66 @@
 }
 
 
+
+- (void) previewEmoji:(UILongPressGestureRecognizer *)gestureRecognizer{
+    
+    CGPoint p = [gestureRecognizer locationInView:self.emojiCollectionView];
+    NSIndexPath *indexPath = [self.emojiCollectionView indexPathForItemAtPoint:p];
+    
+    if (gestureRecognizer.state == UIGestureRecognizerStateEnded) {
+        self.emojiPreview.hidden = YES;
+        self.emojiPreview = nil;
+        return;
+    }
+    if (self.emojiPreview) {
+        self.emojiPreview.hidden = YES;
+        self.emojiPreview = nil;
+    }
+    if (indexPath == nil){
+        NSLog(@"couldn't find index path");
+    } else {
+        // get the cell at indexPath (the one you long pressed)
+        EmojiCollectionViewCell *cell =
+        [self.emojiCollectionView cellForItemAtIndexPath:indexPath];
+        [self showEmojiPreview:indexPath];
+            // do stuff with the cell
+        }
+
+}
+
+- (void) showEmojiPreview:(NSIndexPath *)indexPath
+{
+    if (self.emojiPreview) {
+        return;
+    }
+    EmojiCollectionViewCell *cell =
+    [self.emojiCollectionView cellForItemAtIndexPath:indexPath];
+    CGRect rect = cell.frame;
+
+    CGRect previewRect = CGRectMake(rect.origin.x -12.5 - WIDTH * self.emojiPageControl.currentPage, rect.origin.y - 70, 55, 70);
+    UIImageView *preview = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"emoji_background"]];
+    preview.frame = previewRect;
+    [self addSubview:preview];
+    
+    UILabel *emojiLabel = [[UILabel alloc] initWithFrame:CGRectMake(10, 7.5, 35, 35)];
+    emojiLabel.textAlignment = 1;
+    [preview addSubview:emojiLabel];
+    
+    emojiLabel.text = [self.emojiDataSource objectAtIndex:indexPath.row/24];
+    UILabel *noteLabel = [[UILabel alloc] initWithFrame:CGRectMake(5, emojiLabel.frame.origin.y + emojiLabel.frame.size.height + 1.5, 45, 15)];
+    noteLabel.textAlignment = 1;
+    noteLabel.textColor = [UIColor colorWithRed:68%255/256.0 green:68%255/256.0 blue:68%255/256.0 alpha:1];
+    noteLabel.font = [UIFont systemFontOfSize:11];
+    [preview addSubview:noteLabel];
+    
+    noteLabel.text = @"哈哈";
+    
+    self.emojiPreview = preview;
+}
+
+
+
+
 - (void)bindEmojiData
 {
     NSDictionary *dic = [NSString getAllEmoji];
@@ -89,13 +150,9 @@
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
     EmojiCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"emojiCell" forIndexPath:indexPath];
-//    NSString *emoji = [NSString replaceUnicode:[self.emojiDataSource objectAtIndex:indexPath.row]];
-//    cell.emojiLabel.text = emoji;
-
-//    if (indexPath.row == 23) {
-       NSString *emoji = [NSString stringWithFormat:@"%ld",indexPath.row];
+    NSString *emoji = [NSString replaceUnicode:[self.emojiDataSource objectAtIndex:indexPath.row/24]];
     cell.emojiLabel.text = emoji;
-//    }
+
     return cell;
 }
 
@@ -104,7 +161,7 @@
     if (indexPath.row == 23) {
         [self.emojiDelegate emojiViewDelete];
     }else{
-        NSString *emoji = [self.emojiDataSource objectAtIndex:indexPath.row];
+        NSString *emoji = [self.emojiDataSource objectAtIndex:indexPath.row/24];
         [self.emojiDelegate showEmoji:emoji];
     }
 }
@@ -152,6 +209,11 @@
         _emojiCollectionView.showsVerticalScrollIndicator = NO;
         _emojiCollectionView.alwaysBounceHorizontal = YES;
         [_emojiCollectionView registerClass:[EmojiCollectionViewCell class] forCellWithReuseIdentifier:@"emojiCell"];
+        
+        UILongPressGestureRecognizer *longTap = [[UILongPressGestureRecognizer alloc] initWithTarget:self action:@selector(previewEmoji:)];
+        longTap.minimumPressDuration = 0.5;
+        [_emojiCollectionView addGestureRecognizer:longTap];
+        longTap.delegate = self;
 
     }
     return _emojiCollectionView;
